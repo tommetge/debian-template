@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# This script is run on the target system immediately after
+# the package is installed. Any post-install configuration
+# belongs here.
+
+set -e
+
+# action="$1"
+
+# Enable this block if you need to add any kind of
+# configuration code
+
+# if [ "$action" = "configure" ]; then
+# pass
+# fi
+
+# It is generally appropriate for a package that provides
+# an init script to enable itself at installation time.
+# Tread carefully here as you will be changing your user's
+# system without interaction.
+
+# update-rc.d project defaults

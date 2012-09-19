@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_test:
+	# Feel free to replace this with a call to your test suite
+	echo skipping tests
+
+override_dh_auto_install:
+	dh_auto_install
+	# Enable this line to install the project's init script
+	# dh_installinit --name project -r --no-start -- defaults 90
+	# Enable this line if you are using Python's distutils to install
+	# python setup.py install --root=$(CURDIR)/debian/project-name --no-compile
+
+# This can be removed if you:
+#   - Do not use Python's setup tools
+#   - You aren't touching /usr/local on the destination system
+override_dh_usrlocal:
+
+override_dh_auto_clean:
+	dh_auto_clean
+	# Enable this line if you are using Python's distutils to install
+	# -python setup.py clean --all
+

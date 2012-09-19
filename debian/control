@@ -1,0 +1,17 @@
+# To use:
+#   1. Change 'project-name' in both 'Source' and 'Package' to match your project.
+#   2. Change 'Description' to match your project.
+#   3. Change 'Maintainer' to carry your contact info.
+#   4. Change 'Architecture' as needed.
+#   5. Add dependencies to 'Depends' as needed.
+
+Source: project-name
+Section: contrib
+Priority: optional
+Maintainer: tom metge <tom@accident-prone.com>
+Build-Depends: debhelper (>= 8), devscripts
+
+Package: project-name
+Architecture: all
+Description: project description
+Depends: 
